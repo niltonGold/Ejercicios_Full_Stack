@@ -1,0 +1,30 @@
+.perro_container{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+   
+
+}
+    .div_perro_caja{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div_perro_1{
+        background-color: brown;
+    }
+
+    .div_perro_2{
+        background-color: coral;
+        
+    }
+
+    .div_perro_3{
+        background-color: darkgray;
+        display: flex;
+        flex-direction: column;
+        
+    }
+

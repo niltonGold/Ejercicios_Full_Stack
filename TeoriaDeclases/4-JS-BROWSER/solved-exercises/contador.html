@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="DECREASE">-</button>
+    <p>0</p>
+    <button id="INCREASE">+</button>
+    <script>
+      // obtengo el p con el valor del contador
+      const counterDOM = document.querySelector("p");
+      // inicialización del session storage
+      counterDOM.textContent =
+        sessionStorage.getItem("counter") !== null
+          ? JSON.parse(sessionStorage.getItem("counter"))
+          : 0;
+
+      document.getElementById("DECREASE").addEventListener("click", () => {
+        // cada vez que haga click tengo que restar uno al contenido del p
+        counterDOM.textContent -= 1;
+        sessionStorage.setItem(
+          "counter",
+          JSON.stringify(counterDOM.textContent)
+        );
+      });
+
+      document.getElementById("INCREASE").addEventListener("click", () => {
+        // cada vez que haga click tengo que sumar uno al contenido del p
+        counterDOM.textContent = parseInt(counterDOM.textContent) + 1;
+        sessionStorage.setItem(
+          "counter",
+          JSON.stringify(counterDOM.textContent)
+        );
+      });
+    </script>
+  </body>
+</html>

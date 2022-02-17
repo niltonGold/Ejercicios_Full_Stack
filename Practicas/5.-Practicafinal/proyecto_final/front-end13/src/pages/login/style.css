@@ -1,0 +1,96 @@
+
+ .login_page{
+  position: absolute;
+  background-color: rgb(239, 250, 215);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* padding: 40px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+  
+    .switch{
+      justify-content: left;
+      width: 100%;
+    }
+
+
+
+.login_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.login_title{
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.usuario_incorrecto{
+  display: flex;
+  justify-content: center;
+}
+
+
+.politica_condiciones_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.politica_condiciones{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+@media(min-width: 0px){
+      .login_page{
+      width: 70%;
+      }
+}
+
+
+
+
+
+@media(min-width: 480px){
+
+
+    .login_page{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50vh;
+    }
+
+
+}
+
+@media(min-width: 768px){
+
+
+    .login_page{
+      position: absolute;
+      width: 60vh;
+    }
+
+
+}

@@ -1,0 +1,11 @@
+1.- Crear una aplicación que presente un formulario donde se solicite:
+	-nombre
+	-edad
+	-hobby
+
+Al pulsar el botón, debe guardarse dicha información en memoria.
+Al refrescar el navegador, si existe información en memoria 
+(se ha hecho click previamente)debe mostrarse dicha información 
+debajo del formulario, en caso que el usuario vuelva a 
+introducir información y pulsar el botón, debemos actualizar
+ los datos en memoria y mostrar los datos actualizados

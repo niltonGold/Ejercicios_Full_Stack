@@ -1,0 +1,13 @@
+
+
+
+.titulos{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.list_container_total_cobrar{
+    width: 50vh;
+    
+}

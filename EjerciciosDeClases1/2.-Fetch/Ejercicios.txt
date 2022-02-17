@@ -1,0 +1,19 @@
+Ejercicio 1.- Recuperar informacion de ciudades
+
+Ejercicio 2.- Pintar en el html los paises que tengan 4 letras en su nombre en castellano.
+
+Ejercicio 3.- Pintar en el HTML un listado de todos los paises estructurado como un "listín 
+	      telefónico" en que veamos pais (en español), codigo de pais, prefijo
+
+Ejercicio 4.- Añadir un botón al anterior que tenga el texto "EN", al pulsarlo 
+	      cambiarán los nombres de los paises a su versión en inglés.
+
+Ejercicio 5.- Crear un HTML con un input y un botón. Al introducir el usuario un 
+	      país (en español) debe aparecer debajo la información completa de ese país.
+
+Ejercicio 6.- Refactorizar el código anterior para lograr que al introducir "Arg" o 
+	      "arg" aparezca un listado con la información de todos los paises 
+	      que empiecen por 'arg' (falta por hacer)
+
+Ejercicio 7.- Mostrar en un html los paises cuyo prefijo telefónico se encuentre 
+	      en el rango 20<x<600. Además debemos mostrar cuantos paises son en total.(falta por hacer)

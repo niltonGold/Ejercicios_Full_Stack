@@ -1,0 +1,35 @@
+
+.estilo_lista{
+    display: flex;
+    flex-direction: column;
+    gap: -1rem;
+}
+
+.lista_datos{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    
+}
+
+    .descripcion{
+        font-weight: bold;
+        color: blue;
+        /* background-color: beige; */
+        font-size: smaller;
+        display: flex;
+        align-items: flex-end;
+    }
+
+
+    .contenido_descripcion{
+        font-size: small;
+        /* background-color: aqua; */
+        display: flex;
+        align-items: flex-end;
+    }
+
+
+
+    
+ 

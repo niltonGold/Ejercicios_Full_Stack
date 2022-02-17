@@ -1,0 +1,5 @@
+1- Crear un documento HTML con un body vacio. 
+Con JS crear un p con el texto Axel Presidente
+ en color verde que lo proporcione una clase CSS.
+
+

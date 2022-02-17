@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary:#FFCE00;
+    --secondary: #fe4880;
+    --dark: #212121;
+    --light:#f3f3f3;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('fuente/Montserrat-Medium.ttf') format('ttf');
+}
+
+body {
+   font-family: montserrat, sans-serif; 
+   width: 100%;
+   min-height: 100vh;/* vh viewport height  */
+}
+
+    .card{ /* contiene la carta */
+        margin: 100px;
+        width:  300px;
+        height: 400px;
+
+        
+    }
+            .card_inner{ /* contiene toda la carta con los efectos de giro */
+                width: 100%;
+                height:100%;
+                transition: transform 1s;/*tiempo que tardara en dar la vuelta la card*/
+                transform-style: preserve-3d;/* Establecera si el elemento hijo esta posicionado en el espacio 3d*/
+                cursor: pointer;/*cuando pase sobre la card se vera una mano*/
+                position: relative;
+                border-style: ridge;
+                border-width: 8px;
+            }
+
+            .card_inner.is-flipped{
+                transform: rotateY(180deg);
+            }
+
+            .card_face{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                overflow: hidden;
+                border-radius: 16;
+                box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+            }
+
+            .card__face--back{ /* contenido de lo escrito detras de la carta */
+                background-image: linear-gradient(163deg, rgba(235,229,210,1) 35%, rgba(209,204,27,1) 67%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .card__face--back h2{ /* fromata de la letra detras de la carta */
+                color: rgb(187, 56, 56);
+                font-size: 32px;
+            }
+
+            .card__face--back {
+                transform: rotateY(180deg);
+            }
+
+                    .card_content{
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .card_header{
+                        position: relative;
+                        padding: 30px 30px 30px;
+                    }
+                    
+                    .card_content:after {
+                        content:'';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: -1;
+                        background-image: linear-gradient(180deg, #1f005c, #003383, #00599b, #007da9, #2e9fb2, #79c0bd, #b7dfd2, #f0fff2);
+                    }
+
+                    .pp{
+                        display: block;
+                        width: 128px;
+                        height: 128px;
+                        margin: 0 auto 30px;
+                        border-radius: 50%;
+                        background-color: #FFF;
+                        border: 5px solid #FFF;
+                        object-fit: cover;
+                    }
+
+                    .card_header h2{
+                        color: rgb(97, 6, 6);
+                        font-size: 32px;
+                        font-weight: 900;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+
+                    .card_body h3{
+                        color: darkblue;
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin-bottom: 15px;
+
+                    }
+
+                    .card_body p{
+                        color: darkblue;
+                        font-size: 18px;
+                        line-height: 1.5;
+                    }
+
+            .contenerdor_atras{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap:2rem;
+                
+            }
+                    .contenedor_de_los_datos{
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                    }
+
+                        ul{
+                            list-style-type: none;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                        }
+                        .div_de_nombre_de_descripcion{
+                            width: 50%;
+                        }
+
+                            .ul_nombre_de_descripcion{
+                                font-family: 'Montserrat-Bold', sans-serif;
+                                font-size: large;
+                                font-weight: bold;
+                            }
+
+                        .div_de_puntos{
+                            margin-right: 2rem;
+                            margin-left: 1rem;
+                            font-family: 'Montserrat-Bold', sans-serif;
+                            font-size: large;
+                            font-weight: bold;
+                        }
+
+                        .ul_div_de_datos{
+                            font-family: 'Montserrat-Light', sans-serif;
+                            font-size: large;
+                        }
+                

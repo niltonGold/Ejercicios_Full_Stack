@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Langing Page</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <!--solo se va a ver en version movil -->
+        <img src="./mod/img/logo.svg" alt="" class="header__img">
+        <input type="checkbox" name="hamburguesa" id="hamburguesa" class="header__hamburguesa"/>
+        <label for="hamburguesa" class="header__hamburguesa-icono"> ☰s </label>
+        <label for="hamburguesa" class="header__hamburguesa-icono__x"> × x</label>x
+
+        <!--solo se va a ver en version ordenador -->
+        <img src="./mod/img/logo.svg" alt="" class="header__img-ordenador">
+
+        <!-- contenedor de los navegadores -->
+        <nav class="header__nav">
+            <div class="header__nav-container"> <a href="./index.html" class="header__nav-links">HOME</a></div>
+            <div class="header__nav-container"><a href="./tablero/tablero.html" class="header__nav-links">BOARD</a></div>
+            <div class="header__nav-container"> <a href="./tablero/tablero.html" class="header__nav-links">CONTACTO</a></div>
+        </nav>
+        <!-- contenedor de los iconos -->
+        <div class="header__iconos">
+            <div class="header__iconos-imagen"><img src="./mod/img/facebook.png" alt="" class="header__iconos-imagen"></div>
+            <div class="header__iconos-imagen"><img src="./mod/img/twitterlogo.png" alt="" class="header__iconos-imagen"></div>
+            <div class="header__iconos-imagen"><img src="./mod/img/youtube.png" alt="" class="header__iconos-imagen"></div>
+            <div class="header__iconos-imagen"><img src="./mod/img/insta.png" alt="" class="header__iconos-imagen"></div>
+
+        </div>
+
+    </header>
+    <main class="main">
+        <div class="banner">
+            <div class="banner__video-containerr">
+                <video autoplay muted="muted" loop type="video/mp4" class="banner__video"
+                    src="./videos/pexels-kelly-lacy-9698456.mp4"></video>
+                <div class="banner__background--opacity"></div>
+            </div>
+            <div class="banner__text">
+                <p class="banner__text--pequeño">BIENVENIDO A LA PRÁCTICA DE HTML Y CSS</p>
+                <h2 class="banner__text--grande">Vamos a crear una Web Responsive</h2>
+            </div>
+        </div>
+        <div class="location-section">
+            <h2 class="location-section__title">Lugares del Mundo</h2>
+            <div class="location-section__cards-container">
+                <div class="location-section__card flipperX">
+                    <div class="flip-card-back">
+                        <h2 class="flip-card__h2">Montaña</h2>
+                        <p class="flip-card__p">Las montañas se agrupan, a excepción de los volcanes, en cordilleras o
+                            sierras</p>
+                    </div>
+                    <div class="location-section__img-container">
+                        <div class="location-section__img-container--background"></div>
+                        <img class="location-section__img" src="./imagenes/pexels-pixabay-417173.jpg" alt="foto montaña">
+                    </div>
+                    <p class="location-section__text">Montaña</p>
+                </div>
+                <div class="location-section__card flipperY">
+                    <div class="flip-card-backY">
+                        <h2 class="flip-card__h2">Lago</h2>
+                        <p class="flip-card__p">Visita los mejores lagos situados en el norte de la península</p>
+                    </div>
+                    <div class="location-section__img-container">
+                        <div class="location-section__img-container--background"></div>
+                        <img class="location-section__img" src="./imagenes/pexels-s-migaj-747964.jpg" alt="foto lago">
+                    </div>
+                    <p class="location-section__text">Lago</p>
+                </div>
+                <div class="location-section__card flipperX">
+                    <div class="flip-card-back">
+                        <h2 class="flip-card__h2">Oceano</h2>
+                        <p class="flip-card__p">Los océanos se clasifican en tres grandes: Atlántico, Índico y Pacífico;
+                            y dos menores: Ártico y Antártico</p>
+                    </div>
+                    <div class="location-section__img-container">
+                        <div class="location-section__img-container--background"></div>
+                        <img class="location-section__img" src="./imagenes/pexels-belle-co-847393.jpg" alt="foto oceano">
+                    </div>
+                    <p class="location-section__text">Océano</p>
+                </div>
+            </div>
+        </div>
+        <div class="plans">
+            <div class="plans__text">
+                <h3 class="plans__h3">Find a plan that´s right for you</h3>
+                <p class="plans__p">Every plan comes with a 30-day free trial.</p>
+            </div>
+            <div class="plans__cards-container">
+                <div class="plans__card brozen">
+                    <h4 class="plans__h4">Brozen Packege</h4>
+                    <div class="plans__price"><span class="dollar-span">$</span><span class="price-span">10</span><span
+                            class="month-span">/MONTH</span></div>
+                    <ul class="plans__characteristics">
+                        <li class="plans__characteristic--item">Unlimited Listing</li>
+                        <li class="plans__characteristic--item">Edit your listing</li>
+                        <li class="plans__characteristic--item">Approve reviews</li>
+                    </ul>
+                    <button class="plans__button">Get Started Now</button>
+                </div>
+                <div class="plans__card gold sticker-container">
+                    <h4 class="plans__h4">Gold Packege</h4>
+                    <div class="plans__price"><span class="dollar-span">$</span><span class="price-span">19</span><span
+                            class="month-span">/MONTH</span></div>
+                    <ul class="plans__characteristics">
+                        <li class="plans__characteristic--item">Unlimited Listing</li>
+                        <li class="plans__characteristic--item">Edit your listing</li>
+                        <li class="plans__characteristic--item">Approve reviews</li>
+                        <li class="plans__characteristic--item">Take booking online</li>
+                        <li class="plans__characteristic--item">24/7 support service</li>
+                    </ul>
+                    <button class="plans__button">Get Started Now</button>
+                    <div class="plans__sticker">
+                        <p>MOST POPULAR</p>
+                    </div>
+                </div>
+                <div class="plans__card platinum">
+                    <h4 class="plans__h4">Platinum Packege</h4>
+                    <div class="plans__price"><span class="dollar-span">$</span><span class="price-span">49</span><span
+                            class="month-span">/MONTH</span></div>
+                    <ul class="plans__characteristics">
+                        <li class="plans__characteristic--item">Unlimited Listing</li>
+                        <li class="plans__characteristic--item">Edit your listing</li>
+                        <li class="plans__characteristic--item">Approve reviews</li>
+                    </ul>
+                    <button class="plans__button">Get Started Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Copyright @ Equipo3 2021</p>
+    </footer>
+</body>
+
+</html>

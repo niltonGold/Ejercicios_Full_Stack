@@ -1,0 +1,16 @@
+Ejercicio 1.- Hola Mundo ReactJS y JSX. Crear un componente react utilizando JSX y 
+	      devolver un H1 que tenga como texto `hola mundo`.
+
+Ejercicio 2.- Crear un componente reactJS con un div de 100px por 100px con el fondo 
+	      rojo. Crear otro componente que tenga un p con el texto 
+	      `soy un componente hijo`. Meter este componente como hijo del anterior.
+
+
+Ejercicio 3.- Crear un componente que tenga esta card que pinte la card que se 
+	      mjuestra en la imagen (podeis sacar las imagenes de la card de pexels)
+	      y pintarla.
+
+
+Ejercicio 4.- Crear un componente que pinte 7 cards del componente del 3. 
+	      Cambiarlo ahora para que pinte 1000.
+

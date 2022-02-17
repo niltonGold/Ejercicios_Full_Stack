@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formularioStyle2.css">
+    <title>Document</title>
+</head>
+<body class="body_container">
+    <header class="header_container">
+        <h1>Header</h1>
+    </header>
+
+    <main class="main_container">
+        <div>
+            <p class="formulario_contacto">Formulario de contacto</p>
+            <p>Gracias por tomarte el tiempo para contactar con nosotros y ayudarnos a mejorar</p>
+        </div>    
+        
+        <form action="https://www.google.com" class="formulario_datos">
+
+            <div>
+                <label for="nombre">Nombre</label>
+            </div>
+            <div>    
+                <input class="in" id="nombre" type="text" name="name" size="40" required>
+            </div>
+            <!-- --------------------------------------- -->
+            <div>
+                <label for="correo">Email</label>
+            </div>
+            <div>
+                <input class="in" id="correo" type="email" name="correo" size="40" pattern="*@*">
+            </div> 
+            <!-- --------------------------------------- -->
+            <div>   
+                <label for="edad">Edad</label>
+            </div>
+            <div>
+                <input class="in" id="edad" type="number" name="numero" pattern="[1-90]">
+            </div>
+            <!-- --------------------------------------- -->
+            <div>   
+                <label for="rol">¿Qué rol describe mejor tu situación actual?</label>
+            </div>
+            <div>    
+                <select class="in" id="rol" name="roles" required>
+                    <option>Selecciona tu rol actual</option>
+                    <option>Estudiante</option>
+                    <option>Trabajo a tiempo completo</option>
+                    <option>Freelance</option>
+                    <option>Buscando trabajo</option>
+                </select>   
+            </div>
+            
+            <!-- --------------------------------------- -->    
+            
+            <div class="caja11">
+                <div>
+                </div>
+
+                <div class="recomendar_pagina">
+                    <div>
+                        <p>¿Recomendarías esta página a un conocido?</p>
+                    </div>
+                    <div class="botones_radio" >
+                        <div class="w1">
+                            <label class="radio_eleccion_1" for="definitivamente_si">Definitivamente Si</label>
+                            <input class="radio_eleccion" type="radio" name="definitivamente_si">
+                        </div>
+                        <!-- ---------------- -->
+                        <div class="w1">
+                            <label class="radio_eleccion" for="quizas">Quizás</label>  
+                            <input class="radio_eleccion" type="radio" name="quizas">
+                        </div>
+                        <!-- ---------------- -->
+                        <div class="w1">    
+                            <label class="radio_eleccion" for="no_estoy_seguro">No estoy seguro</label>
+                            <input class="radio_eleccion" type="radio" name="no_estoy_seguro">
+                        </div>    
+                    </div> 
+                </div>
+
+                <div>
+                </div>
+
+
+            </div>       
+            <!-- --------------------------------------- -->  
+            
+            <div>
+                <p>¿Qué recomendaciones te gustaría recibir?(Marca todas las que apliquen)</p>
+            </div>
+
+            <div class="div_checkbox_1">
+                <div>
+                </div>
+
+                <div class="div_checkbox_2">
+                        <div>
+                            <input type="checkbox" id="caja_1"> <label for="caja_1">Proyectos Front_end</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="caja_2"> <label for="caja_2">Proyectos Back_end</label>
+                        </div>
+                        <div>
+                             <input type="checkbox" id="caja_3"> <label for="caja_2">Social media (Marketing)</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="caja_4"> <label for="caja_2">Desarrollo de Videojuegos</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="caja_5"> <label for="caja_2">Tutoriales de UX/UI</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="caja_6"> <label for="caja_2">Otros</label>
+                        </div>
+                </div>
+
+                <div>
+                </div>
+            </div>    
+            
+            <!-- --------------------------------------- -->
+
+            <div>
+                <label for="dia">¿Cuando preferirías que te contactásemos?</label>
+            </div>
+            <div>
+                <input class="in" id="dia" type="date" value="dd/mm/aaaa --:--" aria-setsize="50" required>
+            </div>
+
+            <!-- --------------------------------------- -->
+
+            <div>
+                <label for="texto">¿Otros comentarios o sugerencias?</label>
+            </div>
+            <div>
+                <textarea class="in" id="texto" required>Introduzca sus comentarios..</textarea >
+            </div>
+            <!-- --------------------------------------- -->
+            <div>   
+                <input class="in" type="submit" value="Enviar" h>
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="footer_container">
+        <h1>footer</h1>
+    </footer>
+</body>
+</html>

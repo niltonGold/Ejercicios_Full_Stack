@@ -1,0 +1,65 @@
+.grip_container {
+    display: grid;
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    column-gap: 15px; /* Estoy separando mis elementos */
+    row-gap: 5px; /* separa las filas */
+    margin-right: 2rem;
+
+}
+
+.box {
+    width: 100%;
+    /*height: 350px;*/
+    font-size: 60px;
+    margin-left: 1rem;/* dejara un poco de espacio alrededor de cada caja */
+                      /*  en la parte de abajo y a la izquierda*/  
+    margin-bottom: 1rem; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_color_1{
+    background-color: green;
+}
+
+.bg_color_2{
+    background-color: rgb(52, 38, 179);
+}
+
+.bg_color_3{
+    background-color: rgb(131, 180, 131);
+}
+
+.bg_color_4{
+    background-color: rgb(182, 114, 25);
+}
+
+.bg_color_5{
+    background-color: rgb(178, 219, 29);
+}
+
+.bg_color_6{
+    background-color: rgb(115, 122, 88);
+}
+
+/* .bg_color_7{
+    background-color: rgb(45, 99, 150);
+    grid-column-start: 1;  */
+    /* empiesa en la columna 1 */
+    /* grid-column-end: 3;  */
+    /* termina en la columna 3 */
+
+/* }
+
+.bg_color_8{
+    background-color: rgb(209, 106, 106);
+    display: grid;
+    grid-row-start: 1;  */
+    /* empiesa en la fila 1 */
+    /* grid-row-end: 3;  */
+    /* termina en la fila 1 */
+/* } */

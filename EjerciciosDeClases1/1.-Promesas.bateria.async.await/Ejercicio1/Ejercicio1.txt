@@ -1,0 +1,3 @@
+Ejercicio 1.- Obtener la informacion de la bateria utilizando promesas
+    y pintar en el HTML si está cargando y que porcentaje de
+    batería queda

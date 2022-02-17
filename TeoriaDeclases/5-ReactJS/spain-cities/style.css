@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.city__container{
+    border: 1px solid salmon;
+    margin: 1rem;
+}

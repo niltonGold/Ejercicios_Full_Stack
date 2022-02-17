@@ -1,0 +1,5 @@
+-Usando fetch, como devuelve una promesa usamos then para gestionar esa promesa
+-fetch en version promesas
+-
+-
+-

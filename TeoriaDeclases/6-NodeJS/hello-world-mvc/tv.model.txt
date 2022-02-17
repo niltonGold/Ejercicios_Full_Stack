@@ -1,0 +1,1 @@
+[{"brand":"Samsung","model":"UE55AU7175UXXC","description":"TV LED 55\" - Samsung UE55AU7175UXXC, UHD 4K, Crystal UHD, Smart TV, HDR10+, Tizen, Dolby Digital Plus, Negro","price":798.32,"inches":55,"id":1}]

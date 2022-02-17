@@ -1,0 +1,30 @@
+
+.header_container {/* es el head */
+    width: 100%; /* width es la anchura */
+    height: 40%;
+    min-height: 60px; /* un minimo de altura de 60px */
+    background-color: lightcoral;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.main_container{
+    text-align: center;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.titulos{
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    
+}
+
+.lista{
+    text-align: left;
+}
+    .list_subtitulo{
+        font-weight: bold;
+        font-size: larger;
+    }

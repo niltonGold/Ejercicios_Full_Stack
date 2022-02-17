@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div data-container></div>
+    <button id="ADD">Añadir</button>
+    <script>
+        // obtener el container donde voy a meter los p's
+        const containerDOM = document.querySelector('[data-container]');
+        // recupero el boton para añadirle un listener de click
+        document.getElementById('ADD').addEventListener('click', () => {
+            const p = document.createElement('p');
+            p.textContent = 'añadido desde JS';
+            containerDOM.appendChild(p);
+        });
+    </script>
+</body>
+</html>

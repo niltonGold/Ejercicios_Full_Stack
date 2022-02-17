@@ -1,0 +1,16 @@
+p{
+    color: rgb(98, 84, 228);
+    font-weight: bolder;
+}
+
+.div_container{
+    border: 1px solid black;
+    width: 300px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1rem;
+}

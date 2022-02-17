@@ -1,0 +1,9 @@
+
+Ejercicio2. Crear un endpoint de tipo PUT (con la página de beeceptor)
+ con el siguinete pah (/primer-put) que no responda nada en el
+ body y mandarle la siguiente información: 
+
+{
+  status: 'Encantado con lo que aprendo'
+}
+

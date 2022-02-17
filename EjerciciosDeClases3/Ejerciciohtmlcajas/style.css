@@ -1,0 +1,33 @@
+.page_container { /* es el nodo body */
+    display: flex;
+    min-height: 100vh; /* vh view height  es el tamaño de la pantalla*/
+    flex-wrap: wrap; /* con wrap los elementos estan en linea  */
+    gap: 10px; /* espacio entre cada uno de los hijos del contenedor */
+}
+
+.header_container {/* es el head */
+    width: 100%; /* width es la anchura */
+    height: 40%;
+    min-height: 60px; /* un minimo de altura de 60px */
+    background-color: lightcoral;
+}
+
+.aside_container { /* es el aside, un aside representa un bloque */
+                   /* fuera del contenido principal  */
+    width: 25%;
+    background-color: lightcyan;
+}
+
+.main_container { /* solo debe haber una en una web y representa  */
+                  /* el contenido principal de la web */  
+    width: 70%;
+    background-color: rgb(7, 75, 75);
+}
+
+.footer_container { /* pie de pagina o  */
+                    /* pie de un contenedor */
+    width: 100%;
+    height: 20%;
+    align-self: flex-end; /* alinea todo al final */
+    background-color: rgb(30, 168, 71);
+}

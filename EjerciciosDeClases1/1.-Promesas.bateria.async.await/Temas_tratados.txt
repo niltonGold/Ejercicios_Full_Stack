@@ -1,0 +1,3 @@
+-Uso de promesas
+-Utilizacion de un gestor de la bateria de un ordenador
+-Uso del async/Await

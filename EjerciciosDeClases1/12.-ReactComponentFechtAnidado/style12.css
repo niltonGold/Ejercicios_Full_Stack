@@ -1,0 +1,11 @@
+p{
+    color: rgb(98, 84, 228);
+    font-weight: bolder;
+}
+
+
+.Card_container{
+    border: 1px solid black;
+    width: 300px;
+    height: 500px
+}

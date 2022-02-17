@@ -1,0 +1,5 @@
+Ejercicio 1.- Crear un componente de react que pinte un aeropueto por recibido como 
+	objeto por props. Tienen que pintar el (name, country, state, city, lat, long). 
+	Todos son P, aunque recubrirlos con un div que tenga un border de 1 px solid black,
+	 para que diferenciemos los aeropuertos
+

@@ -1,0 +1,23 @@
+
+.correo:hover {
+    
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: none; 
+
+
+}
+
+.correo:focus{
+
+
+    border: 10px solid coral;
+    outline: none;
+}
+
+
+.validar:active{
+    
+    
+}
+

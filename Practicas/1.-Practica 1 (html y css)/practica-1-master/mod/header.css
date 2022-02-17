@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #1b1c20;
+}
+
+
+/* de aqui hasta el siguiente comentario hago los cambios para que se vea en movil de forma diferente haciendo que desaparezcan y aparezcan contenedores */
+
+.header__hamburguesa {
+    display: none;
+}
+
+.header__hamburguesa-icono {
+    display: none;
+    position: relative;
+    left: 40%;
+    font-size: 2rem;
+}
+
+.header__hamburguesa-icono__x {
+    display: none;
+    position: relative;
+    left: 40%;
+    font-size: 3rem;
+}
+
+.header__img {
+    display: none;
+    width: 7rem;
+}
+
+
+/* aqui empieza la version ordenador dividida en 3 contenedores una para el logo otra para los enlaces de navegacion y otra para los iconos de redes */
+
+.header__img-ordenador {
+    width: 7rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid;
+    border-color: orange;
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+}
+
+.header__nav {
+    display: inline-flex;
+}
+
+.header__nav-links {
+    margin: 0.5rem;
+    text-decoration: none;
+    color: #1b1c20;
+}
+
+.header__nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+}
+
+
+/* hover para los enlaces de navegacion */
+
+.header__nav-container:hover {
+    background-color: #1b1c20;
+}
+
+.header__nav-container:hover>.header__nav-links {
+    color: white;
+    text-decoration: underline;
+}
+
+.header__iconos {
+    display: flex;
+    margin: 1rem;
+}
+
+.header__iconos-imagen {
+    background-size: cover;
+    margin: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: black 1rem;
+}
+
+
+/* hover para la ampliacion de los iconos de redes */
+
+.header__iconos-imagen:hover {
+    transform: scale(1.25);
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in;
+}
+
+
+/* codigo para el responsive de moviles */
+
+@media (max-width: 481px) {
+    .header__img-ordenador {
+        display: none;
+    }
+    .header__img {
+        display: inline;
+    }
+    .header {
+        display: inline-block;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__iconos {
+        display: none;
+        margin: 0;
+    }
+    .header__hamburguesa {
+        display: inline;
+        visibility: hidden;
+    }
+    .header__hamburguesa-icono {
+        display: inline;
+    }
+    .header__hamburguesa:checked~.header__nav {
+        display: block;
+    }
+    .header__hamburguesa:checked~.header__iconos {
+        display: inline-flex;
+    }
+    .header__hamburguesa:checked~.header__hamburguesa-icono__x {
+        display: inline;
+    }
+    .header__hamburguesa:checked~.header__hamburguesa-icono {
+        display: none;
+    }
+}
+
+
+/* codigo para el responsive de tablets */
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    .header__img-ordenador {
+        display: none;
+    }
+    .header__img {
+        display: inline;
+    }
+    .header {
+        display: inline-block;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__iconos {
+        display: none;
+        margin: 0;
+    }
+    .header__hamburguesa {
+        display: inline;
+        visibility: hidden;
+    }
+    .header__hamburguesa-icono {
+        display: inline;
+        left: 70%;
+    }
+    .header__hamburguesa:checked~.header__nav {
+        display: block;
+    }
+    .header__hamburguesa:checked~.header__iconos {
+        display: inline-flex;
+    }
+    .header__hamburguesa:checked~.header__hamburguesa-icono__x {
+        display: inline;
+        left: 70%;
+    }
+    .header__hamburguesa:checked~.header__hamburguesa-icono {
+        display: none;
+    }
+}

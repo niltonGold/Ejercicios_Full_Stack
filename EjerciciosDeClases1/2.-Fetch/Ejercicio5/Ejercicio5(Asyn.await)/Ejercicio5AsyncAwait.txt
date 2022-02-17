@@ -1,0 +1,4 @@
+
+Ejercicio 5.- Crear un HTML con un input y un botón. Al introducir el usuario un 
+	      país (en español) debe aparecer debajo la información completa de ese país.
+		con async await

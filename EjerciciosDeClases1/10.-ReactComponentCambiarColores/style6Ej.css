@@ -1,0 +1,31 @@
+p{
+    color: rgb(98, 84, 228);
+    font-weight: bolder;
+}
+
+.block{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-green{
+    background-color: rgb(0, 255, 42);
+}
+
+.bg-yellow{
+    background-color: rgb(246, 244, 85);
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+
+

@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.overlay_container{
+    position: relative;
+
+}
+
+    .overlay_img{
+        width: 100%;
+        height: 100%;
+            
+    }
+
+    .overlay_text_container {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        transition: 1s ease;
+        width: 100%;
+        height: 100%;/*El contenedor del texto ocupa todo */
+                    /*el contenedor donde esta contenido */           
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(146, 25, 25);
+                    
+    }
+
+    .overlay_text_container:hover{
+        opacity: 0.9;
+    }    
+
+    .overlay_text{
+        font-size: 2rem;
+        color: rgb(106, 82, 211);
+        font-weight: bold;
+    }

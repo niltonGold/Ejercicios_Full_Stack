@@ -1,0 +1,23 @@
+1- Crear un documento HTML con un body vacio. 
+Con JS crear un p con el texto Axel Presidente
+ en color verde que lo proporcione una clase CSS.
+
+
+
+
+2- Crear un documento HTML con el siguiente contenido en el body:
+<ul data-demo="Otro attr" class="container">
+  <li class="item">Primer elemento</li>
+  <li class="item special">Segundo elemento</li>
+  <li data-demo="Atributo Custom" class="item">Tercer elemento</li>
+  <li id="CUARTO_ELEMENTO" class="item special">Cuarto elemento</li>
+</ul>
+
+Utilizando JS:
+-Recuperar todos los li de la página
+-Recuperar todos los elementos con clase "item"
+-Recuperar el elemento con id="CUARTO_ELEMENTO"
+-Recuperar los elementos que tengan atributo  data-demo
+-Cambiar el texto de todos los elementos  que tengan la clase "special" a "Special cambiado"
+-Cambiar el tamaño de letra como estilo en linea de los elemento con atributo  data-demo="Atributo Custom"
+-Crear un li que tenga un id="CREADO_CUSTOM" y añadirlo como último hijo del ul

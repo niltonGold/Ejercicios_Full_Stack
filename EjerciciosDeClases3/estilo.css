@@ -1,0 +1,125 @@
+p {
+    color: red;
+  }
+
+  #divb{
+    border-color:red;
+    border-width: 2px;
+    border-style: solid;
+    width: 50px;
+  }
+
+.divprincipal{
+    border-color:black;
+    border-width: 5px;
+    border-style: solid;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 100px;
+    font-weight: bold;
+    
+  }
+
+.div1{
+    width: 350px;
+    height: 350px;
+    background:#CD5C5C;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} 
+  
+.div2{
+    width: 350px;
+    height: 350px;
+    background:#28B463;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div3{
+    width: 350px;
+    height: 350px;
+    background:#AAB7B8;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.div4{
+    width: 350px;
+    height: 350px;
+    background:#884EA0 ;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.div5{
+    width: 350px;
+    height: 350px;
+    background:#9A7D0A;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.div6{
+    width: 350px;
+    height: 350px;
+    background:rgb(151, 154, 154) ;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.div7{
+    width: 350px;
+    height: 350px;
+    background:rgb(214, 219, 223 );
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.div8{
+    width: 350px;
+    height: 350px;
+    background:rgb(41, 128, 185);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.div9{
+    width: 350px;
+    height: 350px;
+    background:rgb(209, 242, 235);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.div10{
+    width: 350px;
+    height: 350px;
+    background:rgb(229, 152, 102);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+ 
