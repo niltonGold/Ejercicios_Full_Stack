@@ -1,0 +1,604 @@
+@font-face {
+    font-family: 'Oswald', sans-serif;
+    src: local("\fonts\Oswald-VariableFont_wght.ttf") format(TrueType);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.body {
+    color: #1b1c20;
+}
+
+
+/* de aqui hasta el siguiente comentario hago los cambios para que se vea en movil de forma diferente haciendo que desaparezcan y aparezcan contenedores */
+
+.header__hamburguesa {
+    display: none;
+}
+
+.header__hamburguesa-icono {
+    display: none;
+    position: relative;
+    left: 40%;
+    font-size: 2rem;
+}
+
+.header__hamburguesa-icono__x {
+    display: none;
+    position: relative;
+    left: 40%;
+    font-size: 3rem;
+}
+
+.header__img {
+    display: none;
+    width: 7rem;
+}
+
+
+/* aqui empieza la version ordenador dividida en 3 contenedores una para el logo otra para los enlaces de navegacion y otra para los iconos de redes */
+
+.header__img-ordenador {
+    width: 7rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid;
+    border-color: orange;
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+}
+
+.header__nav {
+    display: inline-flex;
+}
+
+.header__nav-links {
+    margin: 0.5rem;
+    text-decoration: none;
+    color: #1b1c20;
+}
+
+.header__nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+}
+
+
+/* hover para los enlaces de navegacion */
+
+.header__nav-container:hover {
+    background-color: #1b1c20;
+}
+
+.header__nav-container:hover>.header__nav-links {
+    color: white;
+    text-decoration: underline;
+}
+
+.header__iconos {
+    display: flex;
+    margin: 1rem;
+}
+
+.header__iconos-imagen {
+    background-size: cover;
+    margin: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: black 1rem;
+}
+
+
+/* hover para la ampliacion de los iconos de redes */
+
+.header__iconos-imagen:hover {
+    transform: scale(1.25);
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in;
+}
+
+
+/* codigo para el responsive de moviles */
+
+@media (max-width: 481px) {
+    .header__img-ordenador {
+        display: none;
+    }
+    .header__img {
+        display: inline;
+    }
+    .header {
+        display: inline-block;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__iconos {
+        display: none;
+        margin: 0;
+    }
+    .header__hamburguesa {
+        display: inline;
+        visibility: hidden;
+
+    }
+    .header__hamburguesa-icono {
+        display: inline;
+
+    }
+    .header__hamburguesa:checked~.header__nav {
+        display: block;
+    }
+    .header__hamburguesa:checked~.header__iconos {
+        display: inline-flex;
+    }
+    .header__hamburguesa:checked~.header__hamburguesa-icono__x {
+        display: inline;
+    }
+    .header__hamburguesa:checked~.header__hamburguesa-icono {
+        display: none;
+    }
+}
+
+
+/* codigo para el responsive de tablets */
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    .header__img-ordenador {
+        display: none;
+    }
+    .header__img {
+        display: inline;
+    }
+    .header {
+        display: inline-block;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__iconos {
+        display: none;
+        margin: 0;
+    }
+    .header__hamburguesa {
+        display: inline;
+        visibility: hidden;
+    }
+    .header__hamburguesa-icono {
+        display: inline;
+        left: 70%;
+    }
+    .header__hamburguesa:checked~.header__nav {
+        display: block;
+    }
+    .header__hamburguesa:checked~.header__iconos {
+        display: inline-flex;
+    }
+    .header__hamburguesa:checked~.header__hamburguesa-icono__x {
+        display: inline;
+        left: 70%;
+    }
+    .header__hamburguesa:checked~.header__hamburguesa-icono {
+        display: none;
+    }
+}
+
+
+
+
+.main {
+    width: 100%;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2em;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.banner__video-container {
+    width: 100%;
+}
+
+.banner__background--opacity {
+    background-color: black;
+    width: 100%;
+    opacity: 0.45;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.banner__video {
+    width: 100%;
+    display: block;
+}
+
+.banner__text {
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1em;
+}
+
+.banner__text--pequeño {
+    font-size: 0.7em;
+}
+
+.location-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    align-items: center;
+    padding: 2em;
+}
+
+.location-section__title {
+    opacity: 0.8;
+}
+
+.location-section__cards-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    column-gap: 1em;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+
+.location-section__card {
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.flipperX {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flipperY {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flipperX:hover {
+    transform: rotateX(180deg);
+
+}
+
+.flipperY:hover {
+    transform: rotateY(180deg);
+
+}
+
+.flip-card-back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.7em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #313131;
+    color: #ffffff;
+    border-radius: 15px;
+    transform: rotateX(180deg);
+    padding: 4em;
+}
+
+.flip-card-backY {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.7em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #313131;
+    color: #ffffff;
+    border-radius: 15px;
+    transform: rotateY(180deg);
+    padding: 4em;
+}
+
+.flip-card__h2 {
+    font-size: 2em;
+}
+
+.flip-card__p {
+    opacity: 0.6;
+}
+
+.location-section__img-container {
+    position: relative;
+}
+
+.location-section__img-container--background {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    opacity: 0.6;
+    border-radius: 15px;
+
+    
+}
+
+.location-section__img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    border-radius: 15px;
+
+}
+
+.location-section__text {
+    position: absolute;
+    top: 2em;
+    color: #ffffff;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 16px 12px 4px rgba(0, 0, 0, 0.7);    
+}
+
+
+/*plans section*/
+
+.plans {
+    background-color: #F0F4F7;
+    color: #717787;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    padding: 1em;
+    margin: 2em 0 2em 0;
+}
+
+.plans__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1em;
+    color: #b4bdc6;
+}
+
+.plans__h3 {
+    font-size: 1.7em;
+    color: #6e768d;
+}
+
+.plans__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2em;
+    padding: 1em;
+    width: 100%;
+
+}
+
+.plans__card {
+    background-color: white;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+    border-radius: 10px;
+    padding: 1em;
+
+}
+
+.plans__h4 {
+    font-size: 1.1em;
+}
+
+
+.dollar-span {
+    font-size: 0.7em;
+    vertical-align: top;
+}
+
+.price-span {
+    font-size: 2em;
+}
+
+.month-span {
+    font-size: 0.7em;
+}
+
+
+.plans__characteristics {
+    list-style: none;
+    text-align: center;
+    font-size: 0.8em;
+    
+}
+
+.plans__characteristic--item {
+    margin: 0.7em;
+    
+}
+
+
+.plans__characteristic--item::before{
+    content: '✓';
+    color: white;
+    padding: 0.4em;
+    margin-right: 1em;
+    background-color: #74ce6a;
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+}
+
+
+.plans__button {
+    padding: 1em 2em 1em 2em;
+    background-color: #71ce73;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    border-bottom: 3px solid #66ac64;
+    cursor: pointer;
+}
+
+.plans__button:hover {
+    border-bottom: 3px solid #71ce73;
+
+
+}
+
+.plans__button:active {
+    background-color: rgb(110, 204, 86);
+
+}
+
+.sticker-container {
+    position: relative;
+}
+
+
+.plans__sticker {
+    height: 55px;
+    width: 55px;
+    color: #ffffff;
+    background-color: #3bbdee;
+    border-radius: 50px;
+    font-size: 0.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -1em;
+    left: 1em;
+    padding: 3em;
+}
+
+.footer {
+    width: 100%;
+    background-color: #1b1c20;
+    color: #ffffff;
+    padding: 1.5em;
+    text-align: center;
+}
+
+
+@media (min-width: 490px){
+
+    .plans {
+        width: 95%;
+    }
+
+    .plans__card {
+        flex-direction: row;
+        column-gap: 1em;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .plans__button {
+        padding: 1em 1em 1em 1em;
+    }
+
+
+}
+
+@media (min-width: 1025px){
+
+    .plans__cards-container {
+        flex-direction: row;
+        column-gap: 2em;
+        flex-wrap: nowrap;
+    }
+
+    .plans__card {
+        flex-direction: column;
+        transition: 0.3s linear;
+    }
+
+    .plans__card:hover {
+        transform: scale(1.08);
+    
+    }
+
+    .plans__card .plans__h4 {
+        border-bottom: 2px solid darkgray;
+        width: 80%;
+        text-align: center;
+        padding: 1.5em 0 1.5em 0;
+    }
+
+    .plans__card .plans__price {
+        border-bottom: 2px solid darkgray;
+        width: 80%;
+        text-align: center;
+        padding: 1.5em 0 1.5em 0;
+
+    }
+
+    .plans__card .plans__characteristics {
+        border-bottom: 2px solid darkgray;
+        width: 80%;
+        text-align: center;
+        padding: 1.5em 0 1.5em 0;
+
+    }
+
+    .plans__sticker {
+        transition: 0.5s ease;
+    }
+
+    .plans__sticker:hover {
+        transform: rotate(360deg);
+    }
+
+}

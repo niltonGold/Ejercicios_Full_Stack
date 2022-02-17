@@ -1,0 +1,29 @@
+
+.header_persistente{
+    background-color: #e57373;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.botones_en_es{
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.boton_swicht{
+    /* margin-top: 0.5rem;
+    margin-bottom: 0.5rem; */
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formularioStyle.css">
+    <title>Document</title>
+</head>
+<body class="body_container">
+    <header class="header_container">
+        <h1>Header</h1>
+    </header>
+
+    <main class="main_container">
+
+        <p>Formulario de contacto</p>
+
+        <p>Gracias por tomarte el tiempo para contactar con nosotros y ayudarnos a mejorar</p>
+    
+        <form action="./datos_formulario.html" class="formulario_datos">
+
+            
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" name="name" size="30">
+            
+            <label for="correo">Email</label>
+            <input id="correo" type="email" name="correo">
+
+            <label for="edad">Edad</label>
+            <input id="edad" type="number" name="numero">
+
+            <label for="nombre">¿Qué rol describe mejor tu situación actual?</label>
+            <select name="rol">
+                <option>Selecciona tu rol actual</option>
+                <option>Estudiante</option>
+                <option>Trabajo a tiempo completo</option>
+                <option>Freelance</option>
+                <option>Buscando trabajo</option>
+            </select>   
+
+            <div>
+                <div>
+                    <p>¿Recomendarías esta página a un conocido?</p>
+                </div>
+                
+                <div class="div_contenedor_radio">
+                    <label class="radio_eleccion_1" for="definitivamente_si">Definitivamente Si</label>
+                    <input class="radio_eleccion" type="radio" name="definitivamente_si">
+
+                    <label class="radio_eleccion" for="quizas">Quizás</label>
+                    <input class="radio_eleccion" type="radio" name="quizas">
+
+                    <label class="radio_eleccion" for="no_estoy_seguro">No estoy seguro</label>
+                    <input class="radio_eleccion" type="radio" name="no_estoy_seguro">
+                </div>    
+            </div>  
+            
+            <p>¿Qué recomendaciones te gustaría recibir?(Marca todas las que apliquen)</p>
+            
+           
+                <div>
+                    <input type="checkbox" id="caja_1"> <label for="caja_1">Proyectos Front_end</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="caja_2"> <label for="caja_2">Proyectos Back_end</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="caja_3"> <label for="caja_2">Social media (Marketing)</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="caja_4"> <label for="caja_2">Desarrollo de Videojuegos</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="caja_5"> <label for="caja_2">Tutoriales de UX/UI</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="caja_6"> <label for="caja_2">Otros</label>
+                </div>
+            
+            
+            <label>¿Cuando preferirías que te contactásemos?</label>
+            <input type="date" value="dd/mm/aaaa --:--">
+
+            <label>¿Otros comentarios o sugerencias?</label>
+            <textarea>Introduzca sus comentarios..</textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <footer class="footer_container">
+        <h1>footer</h1>
+    </footer>
+</body>
+</html>

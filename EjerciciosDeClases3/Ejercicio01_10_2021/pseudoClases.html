@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+
+
+    <script>
+        function myFunction() {
+          document.getElementById("correo").style.color = "red";
+          document.getElementById("correo").style.border = "solid green";
+        
+        }
+    </script>
+
+
+</head>
+<body>
+    <form>
+        <label for="e-mail">Escribe aqui un correo valido</label>
+        <input id="e-mail" class="correo" value="correo" type="email" placeholdes="Escribe tu correo" pattern=".+@.+com" required/>
+        <input class="validar"   type="submit" value="Validar"/>
+        
+    </form>
+</body>
+</html>

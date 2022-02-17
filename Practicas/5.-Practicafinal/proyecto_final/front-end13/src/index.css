@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Oswald', sans-serif;
+  src: url('./fonts/Oswald-VariableFont_wght.ttf') format('ttf');
+}
+
+
+body {
+  margin: 0;
+  font-family: oswald, sans-serif ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div{
+  font-family: oswald, sans-serif ;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.divapp{
+  margin-top: 50px;
+}

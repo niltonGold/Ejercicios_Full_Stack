@@ -1,0 +1,21 @@
+p{
+    color: rgb(98, 84, 228);
+    font-weight: bolder;
+}
+
+
+.div_ciudad_informacion{
+    border: 1px solid black;
+    width: 600px;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#rango_poblacion{
+    width: 200px;
+}
+

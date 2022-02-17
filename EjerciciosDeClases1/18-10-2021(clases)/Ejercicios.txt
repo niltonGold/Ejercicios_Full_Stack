@@ -1,0 +1,8 @@
+
+Parte1- Crear un clase que represente a un círculo.
+ tendrá la propiedad radio y color y como métodos
+ tendremos calcularArea y calcularPerimetro.
+
+Parte2.-Crear dos círculos uno con radio 2cm y otro 
+con radio de 15cm. Pintar en el HTML el area y 
+el perímetro de los círculo

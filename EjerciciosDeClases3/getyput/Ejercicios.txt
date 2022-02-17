@@ -1,0 +1,26 @@
+Ejercicio1- Crear un Endpoint (una URL con datos) de tipo 
+GET con la página designer.mocky.io, con la siguiente respuesta (200 ok):
+
+{
+  name: 'Madrid',
+  image: 'https://www.collegiate-ac.es/propeller/uploads/sites/3/2019/10/city-hero-madrid-1450x742.jpg'
+}
+
+Pintar la imagen de Madrid en el body
+
+
+
+
+Ejercicio2. Crear un endpoint de tipo PUT (con la página de beeceptor)
+ con el siguinete pah (/primer-put) que no responda nada en el
+ body y mandarle la siguiente información: 
+
+{
+  status: 'Encantado con lo que aprendo'
+}
+
+
+
+
+
+2.1 En un HTML tener un botón que cuando se haga click se envíe el PUT del ejercicio 2

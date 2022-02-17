@@ -1,0 +1,3 @@
+
+Ejercicio 3.- Pintar en el HTML un listado de todos los paises estructurado como un "listín 
+	      telefónico" en que veamos pais (en español), codigo de pais, prefijo

@@ -1,0 +1,4 @@
+
+Parte1- Crear un clase que represente a un círculo.
+ tendrá la propiedad radio y color y como métodos
+ tendremos calcularArea y calcularPerimetro.

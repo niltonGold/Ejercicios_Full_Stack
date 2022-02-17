@@ -1,0 +1,96 @@
+{
+    "login": {
+        "title": "LOGIN {{framework}}",
+        "name": "Name {{framework}}",
+        "please_enter_name": "Please enter your name {{framework}}",
+
+        "password": "Password {{framework}}",
+        "please_enter_password": "Please enter your password {{framework}}",
+
+        "log_in": "LOG IN {{framework}}"
+    },
+
+    "pagina_mesas": {
+        "sala": "LIVING ROOM {{framework}}",
+        "terraza": "TERRACE {{framework}}",
+        "barra": "BAR {{framework}}"
+    },
+
+    "rango": {
+        "rango": "Range {{framework}}"
+    },
+
+    "lista_platos_categorias":{
+        "bebidas": "Drinks {{framework}}",
+            "cocacola" : "Coke-Cola {{framework}}",
+            "cocalight": "CokeLight {{framework}}",
+            "fantanaranja": "FantaOrange {{framework}}",
+            "nesti":     "Ice-Tea {{framework}}",
+        "entrantes": "Startes {{framework}}",
+            "palitos": "Sticks {{framework}}",
+            "pollo": "Nuggest {{framework}}",
+            "berengena": "Eggplant {{framework}}",
+            "cebolla": "Onions {{framework}}", 
+        "segundos": "Mains {{framework}}",
+            "hamburguesa": "Hamburguer {{framework}}",
+            "costillas": "Ribbs {{framework}}",
+            "ensalada": "Salad {{framework}}",
+            "sandwish": "Mix Sandw. {{framework}}",
+        "postres": "Desserts {{framework}}",
+            "galleta": "Cookie {{framework}}",
+            "helado": "Ice Cream {{framework}}",
+            "tarta": "Cake {{framework}}",
+            "queso": "Cheese {{framework}}"    
+    },
+
+    "productos":{
+        "productos": "Products {{framework}}"
+    },
+
+    "importe":{
+        "importe": "Cost {{framework}}"
+    },
+
+    "cobrar":{
+        "cobrar": "Collect {{framework}}"
+    },
+
+
+
+    "pagina_cobros":{
+        "pagina_cobros": "Payment Page {{framework}}"
+    },
+
+    "totalapagar":{
+        "totalapagar": "Total to Pay {{framework}}"
+    },
+
+    "efectivo":{
+        "efectivo": "Cash{{framework}}"
+    },
+
+    "tarjeta":{
+        "tarjeta": "Card {{framework}}"
+    },
+
+    "reinicio":{
+        "reinicio": "Reset {{framework}}"
+    },
+
+    "pendiente":{
+        "pendiente": "To Pay {{framework}}"
+    },
+
+    "devolver":{
+        "devolver": "Give back {{framework}}"
+    },
+
+    "finalizar_pago":{
+        "finalizar_pago": "Finish Paymen {{framework}}"
+    },
+
+    "borrar":{
+        "borrar": "Erase {{framework}}"
+    }
+
+}

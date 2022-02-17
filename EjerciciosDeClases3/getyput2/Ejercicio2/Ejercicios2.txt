@@ -1,0 +1,8 @@
+
+
+Ejercicio2.- Crear un endpoint de tipo GET que devuelva 
+la información de los primeros 150 pokemons con 
+la misma estructura que trabajamos ayer.
+
+
+

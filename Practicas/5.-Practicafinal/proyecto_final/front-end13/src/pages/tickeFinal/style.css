@@ -1,0 +1,19 @@
+
+.container{
+    background-color: bisque;
+    width: 100%;
+}
+
+.subtitulo{
+    background-color: burlywood;
+    width: 150px;
+    text-align: left;
+}
+
+.dinero{
+    background-color: burlywood;
+    width: 100px;
+    text-align: right;
+}
+
+

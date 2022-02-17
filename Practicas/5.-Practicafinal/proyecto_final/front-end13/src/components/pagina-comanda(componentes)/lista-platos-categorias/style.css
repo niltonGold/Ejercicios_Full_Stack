@@ -1,0 +1,22 @@
+.categoria_elegida{
+    display: flex;
+    justify-content: center;
+}
+
+.button_group{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: right;
+}
+
+.botones_lista_categorias{
+    display: flex;
+    justify-content: left;
+}
+
+.productos_a_elegir{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+

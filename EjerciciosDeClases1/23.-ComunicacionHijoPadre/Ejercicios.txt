@@ -1,0 +1,39 @@
+1.-Crear un componente con un input en el que metamos los grados Celsius.
+
+2.- Modificar el componente anterior para que por props permita introducir la label
+    del input y el value inicial.
+
+3.-Crear un componente calculadora de temperatura que tenga dos componentes del paso dos.
+   uno para celsius y otro para farenheit
+
+4.- Crear en el componente dos funciones uno que pase de celsius a frenhait y 
+    otro de farenhait a celsius
+
+5.- Actualizar los componentes para que lo que si el usuario escribe en el input de 
+    celsius se actulice su valor en el de farenhait y al revés según escribe el 
+    usuario.
+
+
+
+
+1.- Crear una variable de contexto para guardar el idioma actual
+    ¿como se crea un contexto?
+	Crear el contexto, dando un valor por defecto utilizando la funcion React.createContext
+        que acepta el valor inicial del contexto. Lo que devuelva esta funcion lo debo
+        exportar para ser utilizado en otros archivos
+
+2.- Crear un componente header con un titulo y un select que tenga dos opciones ('es','en')
+    Cuando se cambie el select debe actualizarse la página
+	necesitare un componente para poder actualizar el contexto, es un provider
+
+	Provider. Cada objeto Context viene con un componente Provider 
+	de React que permite que los componentes que lo consumen se suscriban 
+	a los cambios del contexto. El componente Provider acepta una prop value
+ 	que se pasará a los componentes consumidores que son descendientes de 
+	este Provider 
+
+3.- Crear un componente main que pinte un h1 que diga hola si el idioma es 'es' o hello
+    si el idioma es 'en'.
+
+4.- Crear un componente footer que pinte un p que diga 'esto es un footer'
+    si el idioma es 'es' o 'this is a footer' si el idioma es 'en' 

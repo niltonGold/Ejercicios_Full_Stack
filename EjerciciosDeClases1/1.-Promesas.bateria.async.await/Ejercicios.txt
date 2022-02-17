@@ -1,0 +1,5 @@
+1.- Obtener la informacion de la bateria utilizando promesas
+    y pintar en el HTML si está cargando y que porcentaje de
+    batería queda
+
+2.- Repetir el ejercicio 1 pero utilizando async/Await

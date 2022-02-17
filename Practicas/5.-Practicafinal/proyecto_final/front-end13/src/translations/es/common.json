@@ -1,0 +1,104 @@
+{
+    "login": {
+        "title": "ACCEDER {{framework}}",
+        "name": "Nombre {{framework}}",
+        "please_enter_name": "Porfavor mete tu nombre {{framework}}",
+
+        "password": "Contraseña {{framework}}",
+        "please_enter_password": "Porfavor mete tu contraseña {{framework}}",
+
+        "log_in": "INICIAR SESION {{framework}}"
+    },
+
+    "pagina_mesas": {
+        "sala": "SALA {{framework}}",
+        "terraza": "TERRAZA {{framework}}",
+        "barra": "BARRA {{framework}}"
+    },
+
+    "rango": {
+        "rango": "Rango {{framework}}"
+    },
+
+    "lista_platos_categorias":{
+        "bebidas": "Bebidas {{framework}}",
+            "cocacola": "CocaCola {{framework}}",
+            "cocalight": "CocaLight {{framework}}",
+            "fantanaranja": "FantaNaranja {{framework}}",
+            "nesti": "Nesti {{framework}}",
+        "entrantes": "Entrantes {{framework}}",
+            "palitos": "Palitos {{framework}}",
+            "pollo": "Pollito {{framework}}",
+            "berengena": "Berengena {{framework}}",
+            "cebolla": "Cebolla {{framework}}", 
+        "segundos": "Segundos {{framework}}",
+            "hamburguesa": "Hamburguesa {{framework}}",
+            "costillas": "Costillas {{framework}}",
+            "ensalada": "Ensalada {{framework}}",
+            "sandwish": "SandWish {{framework}}",
+        "postres": "Postres {{framework}}",
+            "galleta": "Galleta {{framework}}",
+            "helado": "Helado {{framework}}",
+            "tarta": "Tarta {{framework}}",
+            "queso": "Queso {{framework}}" 
+    },
+    
+    "productos":{
+        "productos": "Productos{{framework}}"
+    },
+
+    "importe":{
+        "importe": "Importe {{framework}}"
+    },
+
+    "cobrar":{
+        "cobrar": "Cobrar {{framework}}"
+    },
+
+
+
+
+
+
+
+
+
+    "pagina_cobros":{
+        "pagina_cobros": "Pagina de Cobros {{framework}}"
+    },
+
+    "totalapagar":{
+        "totalapagar": "Total a Pagar {{framework}}"
+    },
+
+    "efectivo":{
+        "efectivo": "Efectivo{{framework}}"
+    },
+
+    "tarjeta":{
+        "tarjeta": "Tarjeta {{framework}}"
+    },
+
+    "reinicio":{
+        "reinicio": "Reinicio {{framework}}"
+    },
+
+    "pendiente":{
+        "pendiente": "Pendiente {{framework}}"
+    },
+
+    "devolver":{
+        "devolver": "Devolver {{framework}}"
+    },
+
+    "finalizar_pago":{
+        "finalizar_pago": "Finalizar Pago {{framework}}"
+    },
+
+    "borrar":{
+        "borrar": "Borrar {{framework}}"
+    }
+
+
+    
+}

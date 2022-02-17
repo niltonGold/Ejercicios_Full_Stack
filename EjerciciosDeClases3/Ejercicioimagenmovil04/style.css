@@ -1,0 +1,15 @@
+.div_container_1{
+    position: relative;
+
+}
+
+.texto_de_arriba {
+    position: absolute;
+    color: aqua;
+    top: 50%;
+}
+
+.texto_centrado {
+
+
+}

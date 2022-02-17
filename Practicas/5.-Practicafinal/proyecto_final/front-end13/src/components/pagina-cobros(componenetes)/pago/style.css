@@ -1,0 +1,38 @@
+
+.contenedor_pagos{
+    width: 60%;
+}
+
+.pago_pendiente{
+            
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: crimson;
+    width: 100%;
+}
+    .pago_pendiente--hidden{
+                
+        display: none
+    }
+
+
+.pago_devolver{
+            
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(59, 185, 59);
+    width: 100%;
+}
+
+
+    .pago_devolver--hidden{
+                    
+        display: none
+    }
+
+    .pendiente{
+        width: 100px;
+     
+    }    

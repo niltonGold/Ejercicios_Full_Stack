@@ -1,0 +1,25 @@
+.pago_tarjeta{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    justify-content: center;
+}
+
+.panel_numerico{
+    display: flex;
+    flex-direction: column;  
+    gap: 0.2rem;  
+}
+.panel_numerico_btn{
+    display: flex;
+    gap: 0.2rem;  
+}
+
+.pago_efectivo{
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta_icon{
+    padding-top: 1.5rem;
+}

@@ -1,0 +1,3 @@
+
+Ejercicio 7.- Mostrar en un html los paises cuyo prefijo telefónico se encuentre 
+	      en el rango 20<x<600. Además debemos mostrar cuantos paises son en total.

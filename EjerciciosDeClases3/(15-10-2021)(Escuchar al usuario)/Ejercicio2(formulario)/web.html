@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <form class="form_container" novalidate> <!-- Hace que el navegador no valide por nosotros -->
+
+        <div>
+            <label for="name">Nombre</label>
+            <input id="name" name="nombre" type="text" placeholder="Introduzca su nombre" required/>
+        </div>    
+
+        <div>
+            <label for="age">Edad</label>
+            <input id="age" name="edad" type="number" min="0" max="150" placeholder="Introduca su edad" required/>
+        </div>
+        
+        <div>
+            <label for="hobbie">Hobbie</label>
+            <input id="hobbie" name="hobi" type="text" placeholder="Introduzca su hobbie" required/>
+        </div>
+
+        <button class ="btn" type="submit">Aceptar</button>
+
+
+    </form>
+     
+    <div data-info-container></div>
+    
+</body>
+
+    <script src="script.js" ></script>
+
+</html>

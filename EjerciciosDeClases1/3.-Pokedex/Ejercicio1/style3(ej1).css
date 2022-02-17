@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* con box-sizing border-box incluye el relleno y */
+                           /* el borde en el alto y ancho  */
+}
+
+
+/* pokedex_container contiene a todos los 150 card pokemon */
+.pokedex_container{
+    display:flex;
+    flex-wrap: wrap; /* permite apilar los hijos*/
+    gap: 1rem; /* Es la separacion entre los hijos */
+    justify-content: center;
+
+
+}
+
+        /* Contiene la informacion de 1 cars pokemon */
+        .pokemon-card_container{
+            
+            padding: 0.75rem;/* Espacio alrededor del contenido  */
+            text-align: center;
+            box-shadow: 11px 7px 10px 5px rgba(0,0,0,0.46);
+        }
+
+                /* Contiene la imagen de 1 pokemon */
+                .pokemon_img{
+
+                }
+
+                /* Contiene el nombre de un pokemon */
+                .pokemon_name{
+
+                }
+
+                /* Contiene la iformacion 1 del pokemon */
+                .pokemon_list-type{/* ul */
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    justify-content: space-around;/* estacio alrededor del contenido */
+                    margin-top: 0.5rem;
+                }
+
+                        /* Contiene la iformacion 2 del pokemon */
+                        .pokemon_type-item{ /* li */
+
+                        }

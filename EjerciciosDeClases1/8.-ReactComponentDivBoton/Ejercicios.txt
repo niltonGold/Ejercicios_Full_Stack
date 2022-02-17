@@ -1,0 +1,3 @@
+Ejercicio 1.- Hacer un componente que tenga un div de 100px por 100px
+            de color rojo, y un botón. Cuando se pulse el botón, 
+            elcolor de fondo del div cambiará a verde

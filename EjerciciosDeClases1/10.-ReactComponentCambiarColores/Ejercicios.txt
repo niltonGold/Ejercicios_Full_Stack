@@ -1,0 +1,2 @@
+Ejercicio 1.- Hacer un componente que tenga un div de 100px por 100px
+            que cambie entre varios colores de manera eficiente

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condicionales</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+      }
+
+      .bg_brown {
+        background-color: brown;
+      }
+
+      .bg_blue {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const age = prompt("Introduce tu edad");
+      const ageInt = parseInt(age); // si es string devuelve NaN
+
+      if (age === null) {
+        document.write(
+          `<h1>Si cancelas no puedo decirte si eres mayor de edad</h1>`
+        );
+      } else if (isNaN(ageInt)) {
+        document.write(`<h1>Cenutrio ${age} no es un número</h1>`);
+      } else if (ageInt >= 18) {
+        // es mayor de edad
+        document.write("<h1>Eres Mayor de Edad</h1>");
+      } else {
+        // no es mayor de edad
+        document.write("<h1>No Eres Mayor de Edad</h1>");
+      }
+    </script>
+
+    <script>
+      const userInput = prompt("Introduce un numero");
+      const userInputNumber = parseInt(userInput); // si es string devuelve NaN
+      //   let bgColorClass = '';
+      //   if(userInputNumber%2 === 0){
+      //       // ejecuto esto si es par
+      //       bgColorClass='bg_brown';
+      //   }else{
+      //       // ejecuto esto si es impar
+      //       bgColorClass='bg_blue';
+      //   }
+      const bgColorClass = userInputNumber % 2 === 0 ? "bg_brown" : "bg_blue";
+      document.write(`<div class="box ${bgColorClass}"></div>`);
+    </script>
+  </body>
+</html>

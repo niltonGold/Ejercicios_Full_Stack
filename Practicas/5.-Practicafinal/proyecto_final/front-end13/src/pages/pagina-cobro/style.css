@@ -1,0 +1,64 @@
+
+.contenedor_pago_forma{
+    display: flex;
+    flex-direction: row;
+    background-color: blanchedalmond;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.div_pago{
+    /* width: 50%; */
+    display: flex;
+    flex:1;
+    justify-content: center;
+
+}
+
+.div_formaspago{
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    flex:1;
+}
+
+.efectivo_tarjeta_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    background-color: aqua;
+    width: 50%;
+}
+
+    .totalpagar_container{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+        .totalApagar{
+            width: 130px;
+            
+        }
+
+
+
+
+
+    .container_efectivo_tarjeta{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+        .efectivo_tarjeta{
+
+            width: 80px;
+            display: flex;
+            flex-direction: column;
+        }

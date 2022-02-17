@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .form__container{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .form__btn{
+            width: 30%;
+        }
+    </style>
+    <form class="form__container">
+        <div>
+            <label for="NAME">Nombre</label>
+            <input id="NAME" name="name" type="text" required placeholder="Introduzca su nombre" />
+        </div>
+
+        <div>
+            <label for="AGE">Edad</label>
+            <input id="AGE" name="age" type="number" required min="0" max="150" placeholder="Introduzca su edad" />
+        </div>
+
+        <div>
+            <label for="HOBBIE">Hobbie</label>
+            <input id="HOBBIE" name="hobbie" type="text" required placeholder="Introduzca su hobbie" />
+        </div>
+
+        <button class="form__btn" type="submit">Aceptar</button>
+    </form>
+    <div data-info-container></div>
+
+    <script>
+        // Al pulsar el botón, debe guardarse dicha información en memoria.
+
+        function updateDOMStats(name, age, hobbie){
+            // esta función se encarga de actualizar el DOM con los valores del formulario
+            const pNameDOM = document.createElement('p');
+            pNameDOM.textContent = `El último nombre introducido es: ${name}`;
+
+            const pAgeDOM = document.createElement('p');
+            pAgeDOM.textContent = `La última edad introducida es: ${age}`;
+
+            const pHobbieDOM = document.createElement('p');
+            pHobbieDOM.textContent = `El último hobbie introducido es: ${hobbie}`;
+
+            const containerDOM = document.querySelector('[data-info-container]');
+            containerDOM.innerHTML = ''; // limpiamos todos los hijos poniendo vacio su HTML interno
+            containerDOM.appendChild(pNameDOM);
+            containerDOM.appendChild(pAgeDOM);
+            containerDOM.appendChild(pHobbieDOM);
+        }
+
+        // inicializo con la información del sessionStorage
+        if(sessionStorage.getItem('age') !== null){
+            const storedNameValue = JSON.parse(sessionStorage.getItem('name'));
+            const storedAgeValue = JSON.parse(sessionStorage.getItem('age'));
+            const storedHobbieValue = JSON.parse(sessionStorage.getItem('hobbie'));
+            updateDOMStats(storedNameValue,storedAgeValue, storedHobbieValue );
+        }
+
+        // escucho el submit del formulario
+        document.querySelector('.form__container').addEventListener('submit', e => {
+            // elimino el comportamiento por defecto de los formularios. 
+            // Esto evita que se produzca la redirección a donde diga el action del form
+            e.preventDefault(); 
+            const formElement = e.target; // tengo el nodo formulario 
+            const inputName = formElement.name; // obtengo el input del formulario cuyo atributo name es igual a 'name'
+            sessionStorage.setItem('name', JSON.stringify(inputName.value)); // guardo en el session el valor del input
+
+            const inputAge = formElement.age; // obtengo el input del formulario cuyo atributo name es igual a 'age'
+            sessionStorage.setItem('age', JSON.stringify(inputAge.value)); // guardo en el session el valor del input
+
+            const inputHobbie = formElement.hobbie; // obtengo el input del formulario cuyo atributo name es igual a 'hobbie'
+            sessionStorage.setItem('hobbie', JSON.stringify(inputHobbie.value)); // guardo en el session el valor del input
+
+            updateDOMStats(inputName.value, inputAge.value, inputHobbie.value);
+
+        });
+
+    </script>
+</body>
+</html>

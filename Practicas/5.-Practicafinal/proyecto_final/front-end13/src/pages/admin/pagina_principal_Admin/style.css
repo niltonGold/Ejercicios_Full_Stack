@@ -1,0 +1,76 @@
+.pagina_admin{
+
+    background-color: burlywood;
+    margin-top: 2rem;
+   /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw; */
+    display: grid;
+    place-content: center;
+
+}
+
+
+.Admin_container{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.btn_salir_container{
+    width: 100%;
+    text-align: left;
+}
+    .btn_salir{
+        width: 80px;
+    }
+
+
+
+.form_actualizar_datos--hidden{
+    display: none;
+}
+
+
+.form_registrar_camarero--hidden{
+    display: none;
+
+}
+
+
+
+
+
+        .btns_listar_registrar{
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            margin-left: 1rem;
+            align-content: center;
+            vertical-align: middle;
+            height: 100%;
+            gap:1rem;
+        }
+
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-items: center;
+}
+
+    .titulo_formulario{
+        text-align: center;
+    }
+
+    .div_label{
+        /* background-color: blueviolet; */
+        width: 80px;
+    }
+
+    .etiquetas{
+        display: flex;
+        flex-direction: row;
+    }

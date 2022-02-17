@@ -1,0 +1,21 @@
+
+.mesas_links{
+    display: flex;
+    justify-content: center;
+}
+
+.mesas_botones{
+    border: 2px solid black;
+}
+
+.pagina_mesa--btn{
+    width: 100px;
+    padding: 25px;
+    /* margin: 25px; */
+}
+
+.pagina_mesas_btnGroup{
+    width: 120px;
+    display: grid;
+    place-items: center;
+}

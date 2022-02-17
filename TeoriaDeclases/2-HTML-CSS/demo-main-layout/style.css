@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.page__container{
+
+}
+
+.header__container{
+    width: 100%;
+    min-height: 60px;
+    background-color: lightcoral;
+}
+
+.aside__container{
+    width: 100%;
+    background-color: lightseagreen;
+}
+
+.main__container{
+    width: 100%;
+    background-color: lightsteelblue;
+}
+
+.footer__container{
+    width: 100%;
+    background-color: lemonchiffon;
+}

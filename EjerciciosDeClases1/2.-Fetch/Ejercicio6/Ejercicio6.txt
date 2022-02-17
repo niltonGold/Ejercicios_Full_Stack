@@ -1,0 +1,4 @@
+
+Ejercicio 6.- Refactorizar el código anterior para lograr que al introducir "Arg" o 
+	      "arg" aparezca un listado con la información de todos los paises 
+	      que empiecen por 'arg'
